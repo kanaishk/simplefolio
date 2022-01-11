@@ -11,7 +11,7 @@ module.exports = merge(common, {
   mode: "production",
   output: {
     filename: "[name].[contenthash].bundle.js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve("dist"),
   },
   optimization: {
     minimizer: [
@@ -22,7 +22,7 @@ module.exports = merge(common, {
         favicon: "./src/assets/favicon.png",
         minify: {
           removeAttributeQuotes: true,
-          collapseWhitespace: false,
+          collapseWhitespace: true,
           removeComments: true,
         },
       }),
