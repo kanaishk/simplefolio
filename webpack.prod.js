@@ -22,7 +22,7 @@ module.exports = merge(common, {
         favicon: "./src/assets/favicon.png",
         minify: {
           removeAttributeQuotes: true,
-          collapseWhitespace: true,
+          collapseWhitespace: false,
           removeComments: true,
         },
       }),
